@@ -4,7 +4,8 @@
 //
 //  Created by fanpyi on 22/2/16.
 //  Copyright © 2016 fanpyi. All rights reserved.
-//base on http://stackoverflow.com/questions/13017257/how-do-you-determine-spacing-between-cells-in-uicollectionview-flowlayout
+//base on http://stackoverflow.com/questions/13017257/how-do-you-determine-spacing-between-cells-in-uicollectionview-flowlayout 
+// https://github.com/mokagio/UICollectionViewLeftAlignedLayout
 
 import UIKit
 extension UICollectionViewLayoutAttributes {
