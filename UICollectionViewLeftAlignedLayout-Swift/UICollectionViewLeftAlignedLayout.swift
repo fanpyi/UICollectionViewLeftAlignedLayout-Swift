@@ -4,8 +4,7 @@
 //
 //  Created by fanpyi on 22/2/16.
 //  Copyright © 2016 fanpyi. All rights reserved.
-//base on http://stackoverflow.com/questions/13017257/how-do-you-determine-spacing-between-cells-in-uicollectionview-flowlayout 
-// https://github.com/mokagio/UICollectionViewLeftAlignedLayout
+//base on http://stackoverflow.com/questions/13017257/how-do-you-determine-spacing-between-cells-in-uicollectionview-flowlayout  https://github.com/mokagio/UICollectionViewLeftAlignedLayout
 
 import UIKit
 extension UICollectionViewLayoutAttributes {
@@ -35,8 +34,8 @@ class UICollectionViewLeftAlignedLayout: UICollectionViewFlowLayout {
     override func layoutAttributesForItemAtIndexPath(indexPath: NSIndexPath) -> UICollectionViewLayoutAttributes? {
         if  let currentItemAttributes = super.layoutAttributesForItemAtIndexPath(indexPath){
             let sectionInset = self.evaluatedSectionInsetForItemAtIndex(indexPath.section)
-            let  isFirstItemInSection = indexPath.item == 0;
-            let  layoutWidth = CGRectGetWidth(self.collectionView!.frame) - sectionInset.left - sectionInset.right;
+            let  isFirstItemInSection = indexPath.item == 0
+            let  layoutWidth = CGRectGetWidth(self.collectionView!.frame) - sectionInset.left - sectionInset.right
             
             if (isFirstItemInSection) {
                 currentItemAttributes.leftAlignFrameWithSectionInset(sectionInset)
@@ -47,7 +46,7 @@ class UICollectionViewLeftAlignedLayout: UICollectionViewFlowLayout {
             
             let previousFrame = layoutAttributesForItemAtIndexPath(previousIndexPath)?.frame ?? CGRectZero
             let  previousFrameRightPoint = previousFrame.origin.x + previousFrame.width
-            let currentFrame = currentItemAttributes.frame;
+            let currentFrame = currentItemAttributes.frame
             let  strecthedCurrentFrame = CGRectMake(sectionInset.left,
                 currentFrame.origin.y,
                 layoutWidth,
@@ -62,10 +61,10 @@ class UICollectionViewLeftAlignedLayout: UICollectionViewFlowLayout {
                 return currentItemAttributes
             }
             
-            var frame = currentItemAttributes.frame;
+            var frame = currentItemAttributes.frame
             frame.origin.x = previousFrameRightPoint + evaluatedMinimumInteritemSpacingForSectionAtIndex(indexPath.section)
-            currentItemAttributes.frame = frame;
-            return currentItemAttributes;
+            currentItemAttributes.frame = frame
+            return currentItemAttributes
             
         }
         return nil
