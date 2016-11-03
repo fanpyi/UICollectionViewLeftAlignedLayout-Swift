@@ -37,12 +37,12 @@ class UICollectionViewLeftAlignedLayout: UICollectionViewFlowLayout {
     override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
         
         if let currentItemAttributes = super.layoutAttributesForItem(at: indexPath as IndexPath)?.copy() as? UICollectionViewLayoutAttributes {
-            let sectionInset = self.evaluatedSectionInsetForItemAtIndex(index: indexPath.section)
+            let sectionInset = self.evaluatedSectionInsetForItem(at: indexPath.section)
             let isFirstItemInSection = indexPath.item == 0
             let layoutWidth = self.collectionView!.frame.width - sectionInset.left - sectionInset.right
             
             if (isFirstItemInSection) {
-                currentItemAttributes.leftAlignFrameWithSectionInset(sectionInset: sectionInset)
+                currentItemAttributes.leftAlignFrameWithSectionInset(sectionInset)
                 return currentItemAttributes
             }
             
@@ -61,12 +61,12 @@ class UICollectionViewLeftAlignedLayout: UICollectionViewFlowLayout {
             
             if (isFirstItemInRow) {
                 // make sure the first item on a line is left aligned
-                currentItemAttributes.leftAlignFrameWithSectionInset(sectionInset: sectionInset)
+                currentItemAttributes.leftAlignFrameWithSectionInset(sectionInset)
                 return currentItemAttributes
             }
             
             var frame = currentItemAttributes.frame
-            frame.origin.x = previousFrameRightPoint + evaluatedMinimumInteritemSpacingForSectionAtIndex(sectionIndex: indexPath.section)
+            frame.origin.x = previousFrameRightPoint + evaluatedMinimumInteritemSpacing(at: indexPath.section)
             currentItemAttributes.frame = frame
             return currentItemAttributes
             
@@ -74,7 +74,7 @@ class UICollectionViewLeftAlignedLayout: UICollectionViewFlowLayout {
         return nil
     }
     
-    func evaluatedMinimumInteritemSpacingForSectionAtIndex(sectionIndex:Int) -> CGFloat {
+    func evaluatedMinimumInteritemSpacing(at sectionIndex:Int) -> CGFloat {
         if let delegate = self.collectionView?.delegate as? UICollectionViewDelegateFlowLayout {
             let inteitemSpacing = delegate.collectionView?(self.collectionView!, layout: self, minimumInteritemSpacingForSectionAt: sectionIndex)
             if let inteitemSpacing = inteitemSpacing {
@@ -85,7 +85,7 @@ class UICollectionViewLeftAlignedLayout: UICollectionViewFlowLayout {
         
     }
     
-    func evaluatedSectionInsetForItemAtIndex(index: Int) ->UIEdgeInsets {
+    func evaluatedSectionInsetForItem(at index: Int) ->UIEdgeInsets {
         if let delegate = self.collectionView?.delegate as? UICollectionViewDelegateFlowLayout {
             let insetForSection = delegate.collectionView?(self.collectionView!, layout: self, insetForSectionAt: index)
             if let insetForSectionAt = insetForSection {
