@@ -13,32 +13,32 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
     @IBOutlet weak var collectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        collectionView.backgroundColor = UIColor.whiteColor()
-        collectionView.registerClass(UICollectionViewCell.self , forCellWithReuseIdentifier: kCellIdentifier)
-        NSTimer.scheduledTimerWithTimeInterval(1.0, target: collectionView, selector: "reloadData", userInfo: nil, repeats: true)
+        collectionView.backgroundColor = UIColor.white
+        collectionView.register(UICollectionViewCell.self , forCellWithReuseIdentifier: kCellIdentifier)
+        Timer.scheduledTimer(timeInterval: 1.0, target: collectionView, selector: #selector(UICollectionView.reloadData), userInfo: nil, repeats: true)
     }
-    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 2
     }
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return section == 0 ? 20 :80
     }
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(kCellIdentifier, forIndexPath: indexPath)
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kCellIdentifier, for: indexPath)
         
-        cell.contentView.layer.borderColor = UIColor.grayColor().CGColor
+        cell.contentView.layer.borderColor = UIColor.gray.cgColor
         cell.contentView.layer.borderWidth = 2;
         return cell;
     }
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let  randomWidth = (arc4random() % 120) + 60;
-        return CGSizeMake(CGFloat(randomWidth), 60);
+        return CGSize(width: CGFloat(randomWidth), height: 60);
         
     }
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAtIndex section: Int) -> CGFloat {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return section == 0 ? 15 :5
     }
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsetsMake(10, 10, 10, 10)
     }
     override func didReceiveMemoryWarning() {
