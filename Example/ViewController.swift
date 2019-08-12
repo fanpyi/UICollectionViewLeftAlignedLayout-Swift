@@ -15,7 +15,7 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
         super.viewDidLoad()
         collectionView.backgroundColor = UIColor.white
         collectionView.register(UICollectionViewCell.self , forCellWithReuseIdentifier: kCellIdentifier)
-        Timer.scheduledTimer(timeInterval: 1.0, target: collectionView, selector: #selector(UICollectionView.reloadData), userInfo: nil, repeats: true)
+        Timer.scheduledTimer(timeInterval: 1.0, target: collectionView as Any, selector: #selector(UICollectionView.reloadData), userInfo: nil, repeats: true)
     }
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 2
@@ -39,7 +39,7 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
         return section == 0 ? 15 :5
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsetsMake(10, 10, 10, 10)
+        return UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
