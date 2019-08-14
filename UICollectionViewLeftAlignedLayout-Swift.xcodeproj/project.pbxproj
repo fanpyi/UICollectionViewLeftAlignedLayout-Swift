@@ -7,23 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		27F62DDE1C7C57690011A920 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F62DDD1C7C57690011A920 /* AppDelegate.swift */; };
-		27F62DE01C7C57690011A920 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F62DDF1C7C57690011A920 /* ViewController.swift */; };
-		27F62DE31C7C57690011A920 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27F62DE11C7C57690011A920 /* Main.storyboard */; };
-		27F62DE51C7C57690011A920 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27F62DE41C7C57690011A920 /* Assets.xcassets */; };
-		27F62DE81C7C57690011A920 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27F62DE61C7C57690011A920 /* LaunchScreen.storyboard */; };
 		27F62DF01C7C57E40011A920 /* UICollectionViewLeftAlignedLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F62DEF1C7C57E40011A920 /* UICollectionViewLeftAlignedLayout.swift */; };
+		3C277B7D2301EFA700AE85F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C277B752301EFA600AE85F2 /* ViewController.swift */; };
+		3C277B7E2301EFA700AE85F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C277B762301EFA600AE85F2 /* Assets.xcassets */; };
+		3C277B7F2301EFA700AE85F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C277B772301EFA600AE85F2 /* LaunchScreen.storyboard */; };
+		3C277B802301EFA700AE85F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C277B792301EFA600AE85F2 /* Main.storyboard */; };
+		3C277B812301EFA700AE85F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C277B7B2301EFA600AE85F2 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		27F62DDA1C7C57690011A920 /* UICollectionViewLeftAlignedLayout-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UICollectionViewLeftAlignedLayout-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		27F62DDD1C7C57690011A920 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		27F62DDF1C7C57690011A920 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		27F62DE21C7C57690011A920 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		27F62DE41C7C57690011A920 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		27F62DE71C7C57690011A920 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		27F62DE91C7C57690011A920 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27F62DEF1C7C57E40011A920 /* UICollectionViewLeftAlignedLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewLeftAlignedLayout.swift; sourceTree = "<group>"; };
+		3C277B732301EF7900AE85F2 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		3C277B752301EFA600AE85F2 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3C277B762301EFA600AE85F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3C277B782301EFA600AE85F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3C277B7A2301EFA600AE85F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3C277B7B2301EFA600AE85F2 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3C277B7C2301EFA600AE85F2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +41,8 @@
 		27F62DD11C7C57690011A920 = {
 			isa = PBXGroup;
 			children = (
+				3C277B732301EF7900AE85F2 /* Package.swift */,
+				3C277B742301EFA600AE85F2 /* Example */,
 				27F62DDC1C7C57690011A920 /* UICollectionViewLeftAlignedLayout-Swift */,
 				27F62DDB1C7C57690011A920 /* Products */,
 			);
@@ -56,15 +59,22 @@
 		27F62DDC1C7C57690011A920 /* UICollectionViewLeftAlignedLayout-Swift */ = {
 			isa = PBXGroup;
 			children = (
-				27F62DDD1C7C57690011A920 /* AppDelegate.swift */,
-				27F62DDF1C7C57690011A920 /* ViewController.swift */,
-				27F62DE11C7C57690011A920 /* Main.storyboard */,
 				27F62DEF1C7C57E40011A920 /* UICollectionViewLeftAlignedLayout.swift */,
-				27F62DE41C7C57690011A920 /* Assets.xcassets */,
-				27F62DE61C7C57690011A920 /* LaunchScreen.storyboard */,
-				27F62DE91C7C57690011A920 /* Info.plist */,
 			);
 			path = "UICollectionViewLeftAlignedLayout-Swift";
+			sourceTree = "<group>";
+		};
+		3C277B742301EFA600AE85F2 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				3C277B752301EFA600AE85F2 /* ViewController.swift */,
+				3C277B762301EFA600AE85F2 /* Assets.xcassets */,
+				3C277B772301EFA600AE85F2 /* LaunchScreen.storyboard */,
+				3C277B792301EFA600AE85F2 /* Main.storyboard */,
+				3C277B7B2301EFA600AE85F2 /* AppDelegate.swift */,
+				3C277B7C2301EFA600AE85F2 /* Info.plist */,
+			);
+			path = Example;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -94,7 +104,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = fanpyi;
 				TargetAttributes = {
 					27F62DD91C7C57690011A920 = {
@@ -105,7 +115,7 @@
 			};
 			buildConfigurationList = 27F62DD51C7C57690011A920 /* Build configuration list for PBXProject "UICollectionViewLeftAlignedLayout-Swift" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -126,9 +136,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27F62DE81C7C57690011A920 /* LaunchScreen.storyboard in Resources */,
-				27F62DE51C7C57690011A920 /* Assets.xcassets in Resources */,
-				27F62DE31C7C57690011A920 /* Main.storyboard in Resources */,
+				3C277B7E2301EFA700AE85F2 /* Assets.xcassets in Resources */,
+				3C277B802301EFA700AE85F2 /* Main.storyboard in Resources */,
+				3C277B7F2301EFA700AE85F2 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,8 +149,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27F62DE01C7C57690011A920 /* ViewController.swift in Sources */,
-				27F62DDE1C7C57690011A920 /* AppDelegate.swift in Sources */,
+				3C277B7D2301EFA700AE85F2 /* ViewController.swift in Sources */,
+				3C277B812301EFA700AE85F2 /* AppDelegate.swift in Sources */,
 				27F62DF01C7C57E40011A920 /* UICollectionViewLeftAlignedLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -148,20 +158,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		27F62DE11C7C57690011A920 /* Main.storyboard */ = {
+		3C277B772301EFA600AE85F2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				27F62DE21C7C57690011A920 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		27F62DE61C7C57690011A920 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				27F62DE71C7C57690011A920 /* Base */,
+				3C277B782301EFA600AE85F2 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3C277B792301EFA600AE85F2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C277B7A2301EFA600AE85F2 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -171,17 +181,28 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -208,6 +229,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -215,17 +237,28 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -244,6 +277,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -252,11 +287,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "UICollectionViewLeftAlignedLayout-Swift/Info.plist";
+				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.touch.UICollectionViewLeftAlignedLayout-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -264,11 +298,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "UICollectionViewLeftAlignedLayout-Swift/Info.plist";
+				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.touch.UICollectionViewLeftAlignedLayout-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
